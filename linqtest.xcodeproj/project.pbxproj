@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C956BF6E164ED8B800E2F0B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C956BF6D164ED8B800E2F0B6 /* UIKit.framework */; };
+		C956BF70164ED8B800E2F0B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C956BF6F164ED8B800E2F0B6 /* Foundation.framework */; };
+		C956BF72164ED8B800E2F0B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C956BF71164ED8B800E2F0B6 /* CoreGraphics.framework */; };
+		C956BF78164ED8B800E2F0B6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C956BF76164ED8B800E2F0B6 /* InfoPlist.strings */; };
+		C956BF7A164ED8B800E2F0B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C956BF79164ED8B800E2F0B6 /* main.m */; };
+		C956BF7E164ED8B800E2F0B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C956BF7D164ED8B800E2F0B6 /* AppDelegate.m */; };
+		C956BF80164ED8B800E2F0B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C956BF7F164ED8B800E2F0B6 /* Default.png */; };
+		C956BF82164ED8B800E2F0B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C956BF81164ED8B800E2F0B6 /* Default@2x.png */; };
+		C956BF84164ED8B800E2F0B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C956BF83164ED8B800E2F0B6 /* Default-568h@2x.png */; };
+		C956BF87164ED8B800E2F0B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956BF85164ED8B800E2F0B6 /* MainStoryboard.storyboard */; };
+		C956BF8A164ED8B800E2F0B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C956BF89164ED8B800E2F0B6 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C956BF69164ED8B800E2F0B6 /* linqtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linqtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C956BF6D164ED8B800E2F0B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C956BF6F164ED8B800E2F0B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C956BF71164ED8B800E2F0B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C956BF75164ED8B800E2F0B6 /* linqtest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "linqtest-Info.plist"; sourceTree = "<group>"; };
+		C956BF77164ED8B800E2F0B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C956BF79164ED8B800E2F0B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C956BF7B164ED8B800E2F0B6 /* linqtest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "linqtest-Prefix.pch"; sourceTree = "<group>"; };
+		C956BF7C164ED8B800E2F0B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C956BF7D164ED8B800E2F0B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C956BF7F164ED8B800E2F0B6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C956BF81164ED8B800E2F0B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C956BF83164ED8B800E2F0B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C956BF86164ED8B800E2F0B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C956BF88164ED8B800E2F0B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C956BF89164ED8B800E2F0B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C956BF66164ED8B800E2F0B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C956BF6E164ED8B800E2F0B6 /* UIKit.framework in Frameworks */,
+				C956BF70164ED8B800E2F0B6 /* Foundation.framework in Frameworks */,
+				C956BF72164ED8B800E2F0B6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C956BF5E164ED8B800E2F0B6 = {
+			isa = PBXGroup;
+			children = (
+				C956BF73164ED8B800E2F0B6 /* linqtest */,
+				C956BF6C164ED8B800E2F0B6 /* Frameworks */,
+				C956BF6A164ED8B800E2F0B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C956BF6A164ED8B800E2F0B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C956BF69164ED8B800E2F0B6 /* linqtest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C956BF6C164ED8B800E2F0B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C956BF6D164ED8B800E2F0B6 /* UIKit.framework */,
+				C956BF6F164ED8B800E2F0B6 /* Foundation.framework */,
+				C956BF71164ED8B800E2F0B6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C956BF73164ED8B800E2F0B6 /* linqtest */ = {
+			isa = PBXGroup;
+			children = (
+				C956BF7C164ED8B800E2F0B6 /* AppDelegate.h */,
+				C956BF7D164ED8B800E2F0B6 /* AppDelegate.m */,
+				C956BF85164ED8B800E2F0B6 /* MainStoryboard.storyboard */,
+				C956BF88164ED8B800E2F0B6 /* ViewController.h */,
+				C956BF89164ED8B800E2F0B6 /* ViewController.m */,
+				C956BF74164ED8B800E2F0B6 /* Supporting Files */,
+			);
+			path = linqtest;
+			sourceTree = "<group>";
+		};
+		C956BF74164ED8B800E2F0B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C956BF75164ED8B800E2F0B6 /* linqtest-Info.plist */,
+				C956BF76164ED8B800E2F0B6 /* InfoPlist.strings */,
+				C956BF79164ED8B800E2F0B6 /* main.m */,
+				C956BF7B164ED8B800E2F0B6 /* linqtest-Prefix.pch */,
+				C956BF7F164ED8B800E2F0B6 /* Default.png */,
+				C956BF81164ED8B800E2F0B6 /* Default@2x.png */,
+				C956BF83164ED8B800E2F0B6 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C956BF68164ED8B800E2F0B6 /* linqtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C956BF8D164ED8B800E2F0B6 /* Build configuration list for PBXNativeTarget "linqtest" */;
+			buildPhases = (
+				C956BF65164ED8B800E2F0B6 /* Sources */,
+				C956BF66164ED8B800E2F0B6 /* Frameworks */,
+				C956BF67164ED8B800E2F0B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = linqtest;
+			productName = linqtest;
+			productReference = C956BF69164ED8B800E2F0B6 /* linqtest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C956BF60164ED8B800E2F0B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matt Bridges";
+			};
+			buildConfigurationList = C956BF63164ED8B800E2F0B6 /* Build configuration list for PBXProject "linqtest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C956BF5E164ED8B800E2F0B6;
+			productRefGroup = C956BF6A164ED8B800E2F0B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C956BF68164ED8B800E2F0B6 /* linqtest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C956BF67164ED8B800E2F0B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C956BF78164ED8B800E2F0B6 /* InfoPlist.strings in Resources */,
+				C956BF80164ED8B800E2F0B6 /* Default.png in Resources */,
+				C956BF82164ED8B800E2F0B6 /* Default@2x.png in Resources */,
+				C956BF84164ED8B800E2F0B6 /* Default-568h@2x.png in Resources */,
+				C956BF87164ED8B800E2F0B6 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C956BF65164ED8B800E2F0B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C956BF7A164ED8B800E2F0B6 /* main.m in Sources */,
+				C956BF7E164ED8B800E2F0B6 /* AppDelegate.m in Sources */,
+				C956BF8A164ED8B800E2F0B6 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C956BF76164ED8B800E2F0B6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C956BF77164ED8B800E2F0B6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C956BF85164ED8B800E2F0B6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C956BF86164ED8B800E2F0B6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C956BF8B164ED8B800E2F0B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C956BF8C164ED8B800E2F0B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C956BF8E164ED8B800E2F0B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "linqtest/linqtest-Prefix.pch";
+				INFOPLIST_FILE = "linqtest/linqtest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C956BF8F164ED8B800E2F0B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "linqtest/linqtest-Prefix.pch";
+				INFOPLIST_FILE = "linqtest/linqtest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C956BF63164ED8B800E2F0B6 /* Build configuration list for PBXProject "linqtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C956BF8B164ED8B800E2F0B6 /* Debug */,
+				C956BF8C164ED8B800E2F0B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C956BF8D164ED8B800E2F0B6 /* Build configuration list for PBXNativeTarget "linqtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C956BF8E164ED8B800E2F0B6 /* Debug */,
+				C956BF8F164ED8B800E2F0B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C956BF60164ED8B800E2F0B6 /* Project object */;
+}
