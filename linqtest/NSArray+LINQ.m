@@ -123,5 +123,74 @@
     return t;
 }
 
+- (TakePropertyType) Take
+{
+    TakePropertyType t = ^(NSUInteger n){
+        NSMutableArray *arr = [NSMutableArray arrayWithCapacity:n];
+        NSUInteger c = MIN(n, [self count]);
+        for (NSUInteger i = 0; i < c; i++) {
+            [arr addObject:[self objectAtIndex:i]];
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (TakeWhilePropertyType) TakeWhile
+{
+    TakeWhilePropertyType t = ^(BoolLambda f) {
+        NSMutableArray *arr = [NSMutableArray array];
+        for (id obj in self) {
+            if (!f(obj)) {
+                break;
+            }
+            
+            [arr addObject:obj];
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (SkipPropertyType) Skip
+{
+    SkipPropertyType t = ^(NSUInteger n)
+    {
+        NSMutableArray *arr = [NSMutableArray array];
+        
+        for (NSUInteger i = n; i < [self count]; i++) {
+            [arr addObject: [self objectAtIndex: i]];
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (SkipWhilePropertyType) SkipWhile
+{
+    SkipWhilePropertyType t = ^(BoolLambda f) {
+        NSMutableArray *arr = [NSMutableArray array];
+        BOOL skip = YES;
+        for (id obj in self) {
+            if (skip && !f(obj)) {
+                skip = NO;
+            }
+            if (!skip) {
+                [arr addObject:obj];
+            }
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
 
 @end
