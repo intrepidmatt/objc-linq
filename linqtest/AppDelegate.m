@@ -7,11 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "NSArray+LINQ.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    NSArray *arr = @[@"apple", @"banana", @"cherry"];
+    NSArray *newArr = arr
+    .Select(^(id obj){ return [obj uppercaseString]; })
+    .Where(^(id obj){ return [obj hasPrefix:@"A"]; });
+    
+    NSLog(@"%@", newArr);
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

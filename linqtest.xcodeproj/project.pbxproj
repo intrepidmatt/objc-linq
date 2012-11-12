@@ -18,6 +18,7 @@
 		C956BF84164ED8B800E2F0B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C956BF83164ED8B800E2F0B6 /* Default-568h@2x.png */; };
 		C956BF87164ED8B800E2F0B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956BF85164ED8B800E2F0B6 /* MainStoryboard.storyboard */; };
 		C956BF8A164ED8B800E2F0B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C956BF89164ED8B800E2F0B6 /* ViewController.m */; };
+		C956BF92164ED8D400E2F0B6 /* NSArray+LINQ.m in Sources */ = {isa = PBXBuildFile; fileRef = C956BF91164ED8D400E2F0B6 /* NSArray+LINQ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		C956BF86164ED8B800E2F0B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C956BF88164ED8B800E2F0B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C956BF89164ED8B800E2F0B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C956BF90164ED8D400E2F0B6 /* NSArray+LINQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LINQ.h"; sourceTree = "<group>"; };
+		C956BF91164ED8D400E2F0B6 /* NSArray+LINQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LINQ.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				C956BF88164ED8B800E2F0B6 /* ViewController.h */,
 				C956BF89164ED8B800E2F0B6 /* ViewController.m */,
 				C956BF74164ED8B800E2F0B6 /* Supporting Files */,
+				C956BF90164ED8D400E2F0B6 /* NSArray+LINQ.h */,
+				C956BF91164ED8D400E2F0B6 /* NSArray+LINQ.m */,
 			);
 			path = linqtest;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				C956BF7A164ED8B800E2F0B6 /* main.m in Sources */,
 				C956BF7E164ED8B800E2F0B6 /* AppDelegate.m in Sources */,
 				C956BF8A164ED8B800E2F0B6 /* ViewController.m in Sources */,
+				C956BF92164ED8D400E2F0B6 /* NSArray+LINQ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
