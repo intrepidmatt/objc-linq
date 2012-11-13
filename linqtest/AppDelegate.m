@@ -13,20 +13,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     NSArray *arr = @[@"apple", @"banana", @"cherry", @"awesome"];
     NSArray *newArr = arr
-        .TakeWhile(^(id obj) { return [obj hasPrefix:@"a"]; })
+        .Take(3)
+        .SkipWhile(^(id obj) { return [obj hasPrefix:@"a"]; })
         .Select(^(id obj) { return [obj uppercaseString]; });
-
     
     NSLog(@"%@", newArr);
     
-    BOOL hasWordThatStartsWithC = arr.AnyWithBlock(^(id obj) {
-        return [obj hasPrefix:@"c"];
+    BOOL hasWordThatStartsWithA = newArr.AnyWithBlock(^(id obj) {
+        return [obj hasPrefix:@"A"];
     });
     
-    NSLog(@"%@", hasWordThatStartsWithC ? @"YES" : @"NO");
+    NSLog(@"%@", hasWordThatStartsWithA ? @"YES" : @"NO");
     
     
     // Override point for customization after application launch.
