@@ -33,6 +33,24 @@
     
     NSLog(@"%@", grouped);
     
+    NSNumber *avgLength = arr
+    .Select(^(id obj) { return [NSNumber numberWithInt:[obj length]]; })
+    .Average();
+    
+    NSLog(@"%@", avgLength);
+    
+    NSArray *numberArr = @[@1, @1, @2, @3, @5, @8, @13];
+    int min = [numberArr.Min() intValue];
+    int max = [numberArr.Max() intValue];
+    double avg = [numberArr.Average() doubleValue];
+    
+    NSLog(@"Min: %d\nMax: %d\nAvg: %g", min, max, avg);
+    
+    NSNumber *maxEven = numberArr.Where(^(id obj) { return (BOOL)([obj intValue] % 2 == 0); }).Max();
+    NSLog(@"%@", maxEven);
+    
+
+    
     
     // Override point for customization after application launch.
     return YES;

@@ -256,4 +256,64 @@
     return t;
 }
 
+- (MaxPropertyType) Max
+{
+    MaxPropertyType t = ^{
+        NSNumber *max = nil;
+        for (id obj in self) {
+            if ([obj isKindOfClass:[NSNumber class]]) {
+                if (!max || [max compare:obj] == NSOrderedAscending) {
+                    max = obj;
+                }
+            }
+        }
+        
+        return max;
+    };
+    
+    return t;
+}
+
+- (MinPropertyType) Min
+{
+    MinPropertyType t = ^{
+        NSNumber *min = nil;
+        for (id obj in self) {
+            if ([obj isKindOfClass:[NSNumber class]]) {
+                if (!min || [min compare:obj] == NSOrderedDescending) {
+                    min = obj;
+                }
+            }
+        }
+        
+        return min;
+    };
+    
+    return t;
+}
+
+- (AveragePropertyType) Average
+{
+    AveragePropertyType t = ^{
+
+        double sum;
+        int count = 0;
+        
+        for (id obj in self) {
+            if ([obj isKindOfClass:[NSNumber class]]) {
+                sum += [obj doubleValue];
+                count++;
+            }
+        }
+        
+        if (!count) {
+            return (NSNumber *)nil; // Maybe [NSDecimalNumber notANumber]?
+        }
+        
+        return [NSNumber numberWithDouble:(sum / (double)count)];
+    };
+    
+    return t;
+}
+
 @end

@@ -28,6 +28,10 @@ typedef id (^ZipLambda)(id elem1, id elem2);
 typedef NSArray *(^ZipPropertyType)(NSArray *second, ZipLambda block);
 typedef id<NSCopying> (^GroupByLambda)(id obj);
 typedef NSDictionary *(^GroupByPropertyType)(GroupByLambda block);
+typedef NSNumber *(^MaxPropertyType)();
+typedef NSNumber *(^MinPropertyType)();
+typedef NSNumber *(^AveragePropertyType)();
+
 
 @interface NSArray (LINQ)
 
@@ -47,5 +51,8 @@ typedef NSDictionary *(^GroupByPropertyType)(GroupByLambda block);
 @property (readonly) SkipWhilePropertyType SkipWhile;
 @property (readonly) ZipPropertyType Zip;
 @property (readonly) GroupByPropertyType GroupBy;
+@property (readonly) MaxPropertyType Max;
+@property (readonly) MinPropertyType Min;
+@property (readonly) AveragePropertyType Average;
 
 @end
