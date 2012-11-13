@@ -26,6 +26,8 @@ typedef NSArray *(^SkipPropertyType)(NSUInteger n);
 typedef NSArray *(^SkipWhilePropertyType)(BoolLambda block);
 typedef id (^ZipLambda)(id elem1, id elem2);
 typedef NSArray *(^ZipPropertyType)(NSArray *second, ZipLambda block);
+typedef id<NSCopying> (^GroupByLambda)(id obj);
+typedef NSDictionary *(^GroupByPropertyType)(GroupByLambda block);
 
 @interface NSArray (LINQ)
 
@@ -44,5 +46,6 @@ typedef NSArray *(^ZipPropertyType)(NSArray *second, ZipLambda block);
 @property (readonly) SkipPropertyType Skip;
 @property (readonly) SkipWhilePropertyType SkipWhile;
 @property (readonly) ZipPropertyType Zip;
+@property (readonly) GroupByPropertyType GroupBy;
 
 @end

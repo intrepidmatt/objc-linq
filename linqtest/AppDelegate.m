@@ -27,6 +27,12 @@
     
     NSLog(@"%@", hasWordThatStartsWithA ? @"YES" : @"NO");
     
+    NSDictionary *grouped = arr.GroupBy(^(id obj) {
+        return [obj substringToIndex:1];
+    });
+    
+    NSLog(@"%@", grouped);
+    
     
     // Override point for customization after application launch.
     return YES;

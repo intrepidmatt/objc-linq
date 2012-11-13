@@ -235,5 +235,25 @@
     return t;
 }
 
+- (GroupByPropertyType) GroupBy
+{
+    GroupByPropertyType t = ^(GroupByLambda f) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        
+        for (id obj in self) {
+            id<NSCopying> key = f(obj);
+            id arr = [dict objectForKey:key];
+            if (!arr) {
+                arr = [NSMutableArray array];
+                [dict setObject:arr forKey:key];
+            }
+            [arr addObject:obj];
+        }
+        
+        return dict;
+    };
+    
+    return t;
+}
 
 @end
