@@ -31,6 +31,9 @@ typedef NSDictionary *(^GroupByPropertyType)(GroupByLambda block);
 typedef NSNumber *(^MaxPropertyType)();
 typedef NSNumber *(^MinPropertyType)();
 typedef NSNumber *(^AveragePropertyType)();
+typedef NSArray *(^ExceptPropertyType)(NSArray *second);
+typedef NSArray *(^IntersectPropertyType)(NSArray *second);
+typedef NSArray *(^UnionPropertyType)(NSArray *second);
 
 
 @interface NSArray (LINQ)
@@ -54,5 +57,8 @@ typedef NSNumber *(^AveragePropertyType)();
 @property (readonly) MaxPropertyType Max;
 @property (readonly) MinPropertyType Min;
 @property (readonly) AveragePropertyType Average;
+@property (readonly) ExceptPropertyType Except;
+@property (readonly) IntersectPropertyType Intersect;
+@property (readonly) UnionPropertyType Union;
 
 @end

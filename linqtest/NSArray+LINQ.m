@@ -316,4 +316,50 @@
     return t;
 }
 
+- (ExceptPropertyType) Except
+{
+    ExceptPropertyType t = ^(NSArray *second){
+        NSMutableArray *arr = [NSMutableArray array];
+        
+        for (id obj in self) {
+            if (![second containsObject:obj]) {
+                [arr addObject:obj];
+            }
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (IntersectPropertyType) Intersect
+{
+    IntersectPropertyType t = ^(NSArray *second) {
+        NSMutableArray *arr = [NSMutableArray array];
+        
+        for (id obj in self) {
+            if ([second containsObject:obj]) {
+                [arr addObject:obj];
+            }
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (UnionPropertyType) Union
+{
+    UnionPropertyType t = ^(NSArray *second) {
+        NSMutableSet *set = [NSMutableSet set];
+        [set addObjectsFromArray:self];
+        [set addObjectsFromArray:second];
+        return [set allObjects];
+    };
+    
+    return t;
+}
+
 @end

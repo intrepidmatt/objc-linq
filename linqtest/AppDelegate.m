@@ -49,7 +49,6 @@
     NSNumber *maxEven = numberArr.Where(^(id obj) { return (BOOL)([obj intValue] % 2 == 0); }).Max();
     NSLog(@"%@", maxEven);
     
-
     
     
     // Override point for customization after application launch.
