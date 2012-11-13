@@ -10,25 +10,22 @@
 
 typedef id (^SelectLambda)(id elem);
 typedef NSArray *(^SelectPropertyType)(SelectLambda block);
-
 typedef BOOL (^BoolLambda)(id elem);
 typedef NSArray *(^WherePropertyType)(BoolLambda block);
-
 typedef BOOL (^AnyPropertyType)();
 typedef BOOL (^AnyWithBlockPropertyType)();
-
 typedef id (^FirstPropertyType)();
 typedef id (^FirstWithBlockPropertyType)(BoolLambda block);
-
+typedef id (^LastPropertyType)();
+typedef id (^LastWithBlockPropertyType)(BoolLambda block);
 typedef BOOL (^AllPropertyType)(BoolLambda block);
-
 typedef NSArray *(^DistinctPropertyType)();
-
 typedef NSArray *(^TakePropertyType)(NSUInteger n);
 typedef NSArray *(^TakeWhilePropertyType)(BoolLambda block);
-
 typedef NSArray *(^SkipPropertyType)(NSUInteger n);
 typedef NSArray *(^SkipWhilePropertyType)(BoolLambda block);
+typedef id (^ZipLambda)(id elem1, id elem2);
+typedef NSArray *(^ZipPropertyType)(NSArray *second, ZipLambda block);
 
 @interface NSArray (LINQ)
 
@@ -38,11 +35,14 @@ typedef NSArray *(^SkipWhilePropertyType)(BoolLambda block);
 @property (readonly) AnyWithBlockPropertyType AnyWithBlock;
 @property (readonly) FirstPropertyType First;
 @property (readonly) FirstWithBlockPropertyType FirstWithBlock;
+@property (readonly) LastPropertyType Last;
+@property (readonly) LastWithBlockPropertyType LastWithBlock;
 @property (readonly) AllPropertyType All;
 @property (readonly) DistinctPropertyType Distinct;
 @property (readonly) TakePropertyType Take;
 @property (readonly) TakeWhilePropertyType TakeWhile;
 @property (readonly) SkipPropertyType Skip;
 @property (readonly) SkipWhilePropertyType SkipWhile;
+@property (readonly) ZipPropertyType Zip;
 
 @end

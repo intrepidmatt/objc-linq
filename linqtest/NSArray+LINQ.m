@@ -98,6 +98,31 @@
     return t;
 }
 
+- (LastPropertyType) Last
+{
+    LastPropertyType t = ^{
+        return [self lastObject];
+    };
+    
+    return t;
+}
+
+- (LastWithBlockPropertyType) LastWithBlock
+{
+    LastWithBlockPropertyType t = ^(BoolLambda f) {
+        for (int i = [self count] - 1; i >= 0; i--) {
+            id obj = [self objectAtIndex:i];
+            if (f(obj)) {
+                return obj;
+            }
+        }
+        
+        return (id)nil;
+    };
+    
+    return t;
+}
+
 - (AllPropertyType) All
 {
     AllPropertyType t = ^(BoolLambda f) {
@@ -184,6 +209,24 @@
             if (!skip) {
                 [arr addObject:obj];
             }
+        }
+        
+        return arr;
+    };
+    
+    return t;
+}
+
+- (ZipPropertyType) Zip
+{
+    ZipPropertyType t = ^(NSArray *second, ZipLambda f) {
+        NSMutableArray *arr = [NSMutableArray array];
+        
+        for (int i = 0; i < [self count] && i < [second count]; i++) {
+            id firstObj = [self objectAtIndex:i];
+            id secondObj = [second objectAtIndex:i];
+            id outObj = f(firstObj, secondObj);
+            [arr addObject:outObj];
         }
         
         return arr;
