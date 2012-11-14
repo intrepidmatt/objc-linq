@@ -13,7 +13,7 @@ typedef NSArray *(^SelectPropertyType)(SelectLambda block);
 typedef BOOL (^BoolLambda)(id elem);
 typedef NSArray *(^WherePropertyType)(BoolLambda block);
 typedef BOOL (^AnyPropertyType)();
-typedef BOOL (^AnyWithBlockPropertyType)();
+typedef BOOL (^AnyWithBlockPropertyType)(BoolLambda block);
 typedef id (^FirstPropertyType)();
 typedef id (^FirstWithBlockPropertyType)(BoolLambda block);
 typedef id (^LastPropertyType)();
